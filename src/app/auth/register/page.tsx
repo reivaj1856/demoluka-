@@ -1,0 +1,1 @@
+// Your TypeScript code for register page here
