@@ -1,11 +1,5 @@
-// This is the TypeScript definition file for Next.js
-// It helps TypeScript understand the Next.js specific types.
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
 
-// Import Next.js types
-import { NextConfig } from 'next';
-declare module 'next' {
-  interface NextConfig {
-    reactStrictMode?: boolean;
-    swcMinify?: boolean;
-  }
-}
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/pages/api-reference/config/typescript
