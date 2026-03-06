@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0B14;
+  --surface: #111327;
+  --border: #23285C;
+  --text: #E9E8FF;
+  --text-muted: #B9B7E6;
+  --primary: #5B21B6;
+  --primary-600: #6D28D9;
+  --accent: #22D3EE;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  border-color: var(--border);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 45%, transparent);
+}
