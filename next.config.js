@@ -1,0 +1,9 @@
+// next.config.js
+module.exports = {
+  reactStrictMode: true,
+  swcMinify: true,
+  experimental: {
+    appDir: true,
+    serverActions: true,
+  },
+};
