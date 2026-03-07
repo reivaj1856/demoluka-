@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import type { Payment } from '../../../lib/payments'
 import { listPayments } from '../../../lib/payments'
 
@@ -13,12 +14,20 @@ function formatDate(iso: string) {
 }
 
 export default function TransactionsPage() {
-  const [q, setQ] = useState('')
+  const searchParams = useSearchParams()
+  const urlQ = (searchParams.get('q') ?? '').toString()
+
+  const [q, setQ] = useState(urlQ)
   const [items, setItems] = useState<Payment[]>([])
 
   useEffect(() => {
     setItems(listPayments())
   }, [])
+
+  // keep state synced with URL changes
+  useEffect(() => {
+    setQ(urlQ)
+  }, [urlQ])
 
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase()
