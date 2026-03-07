@@ -34,7 +34,7 @@ function seed(): Payment[] {
       id: 'pmt_002',
       createdAt: daysAgo(1),
       description: 'Transferencia',
-      to: 'Juan P��rez',
+      to: 'Juan Pérez',
       amount: 60,
       status: 'completed',
     },
