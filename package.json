@@ -1,1 +1,25 @@
-{\n  "name": "demo-fintech-app",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "dev": "next dev",\n    "build": "next build",\n    "start": "next start"\n  },\n  "dependencies": {\n    "next": "latest",\n    "react": "latest",\n    "react-dom": "latest",\n    "framer-motion": "latest",\n    "recharts": "latest",\n    "tailwindcss": "latest",\n    "postcss": "latest",\n    "autoprefixer": "latest"\n  },\n  "devDependencies": {\n    "typescript": "latest",\n    "@types/react": "latest",\n    "@types/react-dom": "latest"\n  }\n}
+{
+  "name": "demo-fintech-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "autoprefixer": "latest",
+    "framer-motion": "latest",
+    "next": "latest",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}
