@@ -39,6 +39,32 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         </aside>
 
         <section className="rounded-2xl border border-border bg-surface shadow-card p-6">
+          <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center gap-3">
+              <div className="text-lg font-semibold">Panel</div>
+              <span className="hidden rounded-full border border-border bg-bg/30 px-2 py-1 text-xs text-text-muted md:inline">
+                demo@lukademo.app
+              </span>
+            </div>
+
+            <div className="flex w-full flex-col gap-3 md:w-auto md:flex-row md:items-center">
+              <label className="w-full md:w-72">
+                <span className="sr-only">Buscar</span>
+                <input
+                  placeholder="Buscar..."
+                  className="w-full rounded-xl border border-border bg-bg/40 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary"
+                />
+              </label>
+
+              <a
+                href="/app/payments"
+                className="inline-flex items-center justify-center rounded-xl bg-primary px-3 py-2 text-sm font-medium hover:bg-primary-600"
+              >
+                Nuevo pago
+              </a>
+            </div>
+          </div>
+
           {children}
         </section>
       </div>
